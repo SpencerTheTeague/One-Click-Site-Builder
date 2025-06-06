@@ -1,62 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Plan - OneClickSiteBuilder</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Plan – OneClickSiteBuilder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-    <div class="form-container">
-        <h1>Basic Plan - $29.99</h1>
-        <p class="plan-description">Simple website with essential information and professional styling</p>
-        
-        <a href="index.html" class="back-link">← Back to Main Page</a>
-        
-        <div class="plan-features-summary">
-            <ul>
-                <li>✓ 2 free edits included</li>
-                <li>✓ Delivered as ZIP + active website address + link</li>
-                <li>✓ Perfect for basic business presence</li>
-            </ul>
-        </div>
+  <div class="form-container">
+    <h1>Basic Plan – $29.99</h1>
+    <p class="plan-description">
+      Simple website with essential information and professional styling
+    </p>
+    <a href="index.html" class="back-link">← Back to Main Page</a>
 
-        <form id="basic-form" class="order-form">
-            <div class="form-section">
-                <h3>Basic Information</h3>
-                <div class="form-row">
-                    <div class="form-group">
-                        <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-                        <label for="basic-name">Your Name*</label>
-                        <input type="text" id="basic-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="basic-email">Your Email*</label>
-                        <input type="email" id="basic-email" name="email" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="basic-business">Business/Project Name*</label>
-                    <input type="text" id="basic-business" name="business" required>
-                </div>
-                <div class="form-group">
-                    <label for="basic-description">Description of Your Website*</label>
-                    <textarea id="basic-description" name="description" rows="4" placeholder="Describe what your website should include and its purpose" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="basic-colors">Preferred Colors</label>
-                    <input type="text" id="basic-colors" name="colors" placeholder="e.g., Blue and white, or modern dark theme">
-                </div>
-                <div class="form-group">
-                    <label for="basic-content">Content Details</label>
-                    <textarea id="basic-content" name="content" rows="3" placeholder="Any specific content, text, or information you want included"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Submit Basic Order - $29.99</button>
-       </form>
+    <div class="plan-features-summary">
+      <ul>
+        <li>✓ 2 free edits included</li>
+        <li>✓ Delivered as ZIP + active website address + link</li>
+        <li>✓ Perfect for basic business presence</li>
+      </ul>
     </div>
 
-    <script src="js/script.js"></script>
+    <!--
+      ▼ The FORM STARTS HERE. 
+      ▼ We specify method="POST" and action="https://formspree.io/f/xvgrzrvg"
+      ▼ so that Formspree will receive the submission.
+    -->
+    <form
+      id="basic-form"
+      class="order-form"
+      method="POST"
+      action="https://formspree.io/f/xvgrzrvg"
+    >
+      <div class="form-section">
+        <h3>Basic Information</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="basic-name">Your Name *</label>
+            <input
+              type="text"
+              id="basic-name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="basic-email">Your Email *</label>
+            <input
+              type="email"
+              id="basic-email"
+              name="email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="basic-business">Business/Project Name *</label>
+          <input
+            type="text"
+            id="basic-business"
+            name="business"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="basic-description">Description of Your Website *</label>
+          <textarea
+            id="basic-description"
+            name="description"
+            rows="4"
+            placeholder="Describe what your website should include and its purpose"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="basic-colors">Preferred Colors</label>
+          <input
+            type="text"
+            id="basic-colors"
+            name="colors"
+            placeholder="e.g., Blue and white, or modern dark theme"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="basic-content">Content Details</label>
+          <textarea
+            id="basic-content"
+            name="content"
+            rows="3"
+            placeholder="Any specific content, text, or information you want included"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Submit Basic Order – $29.99
+        </button>
+      </div>
+    </form>
+    <!-- ▼ Form ends here. -->
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-
