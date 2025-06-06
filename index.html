@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneClickSiteBuilder - Professional Websites in 24 Hours</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Professional Header -->
+    <header class="professional-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo-section">
+                    <img src="images/rocket-logo-with-orbit.png" alt="OneClickSiteBuilder Rocket" class="rocket-logo">
+                    <div class="brand-text">
+                        <h1 class="brand-name">OneClickSiteBuilder</h1>
+                        <p class="brand-tagline">Professional Web Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <nav class="main-nav">
+                    <div class="tech-badge html nav-tech">HTML</div>
+                    <div class="tech-badge css nav-tech">CSS</div>
+                    <div class="tech-badge js nav-tech">JS</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">🚀 Launch Your Business Online</span>
+                </div>
+                <h1 class="hero-title">Custom HTML Websites<br>in 24 Hours - Only <span class="price-highlight">$29.99</span></h1>
+                <p class="hero-subtitle">No coding. No fuss. Perfect for small businesses, portfolios, or personal projects.</p>
+                <div class="hero-buttons">
+                    <a href="#examples" class="btn btn-primary">View Examples</a>
+                    <a href="#pricing" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Removed duplicate tech badges - they only appear in navigation now -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Select the perfect package for your website needs</p>
+            </div>
+            <div class="pricing-container">
+                <!-- Basic Plan -->
+                <div class="pricing-card basic-card" onclick="selectPlan('basic')">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">$29.99</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ 2 free edits included</li>
+                        <li>✓ Delivered as ZIP + active website address + link</li>
+                        <li>✓ Perfect for basic business presence</li>
+                    </ul>
+                    <button class="btn-plan-select" onclick="selectPlan('basic')">Select Basic</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card premium-card" onclick="selectPlan('premium')">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Premium</h3>
+                        <div class="plan-price">$99.99</div>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Up to 5 email-based edits included</li>
+                        <li>✓ Phone consultation included</li>
+                        <li>✓ Delivered as ZIP + active website address + link</li>
+                        <li>✓ Professional design with images and styling</li>
+                        <li>✓ Enhanced visual appeal and functionality</li>
+                    </ul>
+                    <button class="btn-plan-select premium" onclick="selectPlan('premium')">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Website Options</h2>
+                <p class="section-subtitle">Professional websites that convert visitors into customers</p>
+            </div>
+            <div class="examples-container">
+                <!-- Basic Example -->
+                <div class="example-card" onclick="selectPlan('basic')">
+                    <div class="example-image-container">
+                        <img src="images/basic-example-complete.jpg" alt="Basic Website Example" class="example-img">
+                        <div class="example-overlay">
+                            <div class="tier-label-box">
+                                <div class="spinning-square basic-square"></div>
+                                <span class="tier-label">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-content">
+                        <h3 class="example-title">Basic Business Website</h3>
+                        <p class="example-desc">A complete business website with professional header navigation, welcome message, and clear call-to-action.</p>
+                    </div>
+                </div>
+
+                <!-- Premium Example -->
+                <div class="example-card" onclick="selectPlan('premium')">
+                    <div class="example-image-container">
+                        <img src="images/premium-example-new.jpg" alt="Premium Website Example" class="example-img">
+                        <div class="example-overlay">
+                            <div class="tier-label-box">
+                                <div class="spinning-square premium-square"></div>
+                                <span class="tier-label">Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-content">
+                        <h3 class="example-title">Premium Business Website</h3>
+                        <p class="example-desc">A modern website with professional images, styled sections, and enhanced visual appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" style="color: #FF8C00 !important; background-color: yellow; padding: 20px; text-align: center; margin-bottom: 50px;">How It Works</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🎨</div>
+                    <h3 class="step-title">Choose Your Style</h3>
+                    <p class="step-desc">Browse our examples to see what's possible.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">📝</div>
+                    <h3 class="step-title">Answer a Few Questions</h3>
+                    <p class="step-desc">Tell us exactly what you need—pages, colors, logo, images.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">👁️</div>
+                    <h3 class="step-title">Review & Approve</h3>
+                    <p class="step-desc">We build your site in Manus and send a preview link.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">⬇️</div>
+                    <h3 class="step-title">Download & Launch</h3>
+                    <p class="step-desc">Download the ZIP and launch the site on your domain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Questions?</h2>
+            <p>Email us at <a href="mailto:admin@oneclicksitebuilder.com">admin@oneclicksitebuilder.com</a> or fill out the form above to place an order.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <p>&copy; 2025 OneClickSiteBuilder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

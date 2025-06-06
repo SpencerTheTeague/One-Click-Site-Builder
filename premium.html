@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plan - OneClickSiteBuilder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Premium Plan - $99.99</h1>
+        <p class="plan-description">Enhanced website with images and advanced styling</p>
+        
+        <a href="index.html" class="back-link">← Back to Main Page</a>
+        
+        <div class="plan-features-summary">
+            <ul>
+                <li>✓ Up to 5 email-based edits included</li>
+                <li>✓ Phone consultation included</li>
+                <li>✓ Delivered as ZIP + active website address + link</li>
+                <li>✓ Professional design with images and styling</li>
+                <li>✓ Enhanced visual appeal and functionality</li>
+            </ul>
+        </div>
+
+        <form id="premium-form" class="order-form">
+            <div class="form-section">
+                <h3>Basic Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="premium-name">Your Name*</label>
+                        <input type="text" id="premium-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="premium-email">Your Email*</label>
+                        <input type="email" id="premium-email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="premium-business">Business/Project Name*</label>
+                    <input type="text" id="premium-business" name="business" required>
+                </div>
+                <div class="form-group">
+                    <label for="premium-description">Description of Your Website*</label>
+                    <textarea id="premium-description" name="description" rows="4" placeholder="Describe what your website should include and its purpose" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Image Uploads & Locations</h3>
+                <div class="image-upload-group">
+                    <div class="form-group">
+                        <label for="image1-upload">Image 1 Upload</label>
+                        <input type="file" id="image1-upload" name="image1" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="image1-location">Where should Image 1 go?</label>
+                        <input type="text" id="image1-location" name="image1Location" placeholder="Describe where this image should go">
+                    </div>
+                </div>
+                
+                <div class="image-upload-group">
+                    <div class="form-group">
+                        <label for="image2-upload">Image 2 Upload</label>
+                        <input type="file" id="image2-upload" name="image2" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="image2-location">Where should Image 2 go?</label>
+                        <input type="text" id="image2-location" name="image2Location" placeholder="Describe where this image should go">
+                    </div>
+                </div>
+                
+                <div class="image-upload-group">
+                    <div class="form-group">
+                        <label for="image3-upload">Image 3 Upload</label>
+                        <input type="file" id="image3-upload" name="image3" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="image3-location">Where should Image 3 go?</label>
+                        <input type="text" id="image3-location" name="image3Location" placeholder="Describe where this image should go">
+                    </div>
+                </div>
+                
+                <div class="image-upload-group">
+                    <div class="form-group">
+                        <label for="image4-upload">Image 4 Upload</label>
+                        <input type="file" id="image4-upload" name="image4" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="image4-location">Where should Image 4 go?</label>
+                        <input type="text" id="image4-location" name="image4Location" placeholder="Describe where this image should go">
+                    </div>
+                </div>
+                
+                <div class="image-upload-group">
+                    <div class="form-group">
+                        <label for="image5-upload">Image 5 Upload</label>
+                        <input type="file" id="image5-upload" name="image5" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="image5-location">Where should Image 5 go?</label>
+                        <input type="text" id="image5-location" name="image5Location" placeholder="Describe where this image should go">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Design Preferences</h3>
+                <div class="form-group">
+                    <label for="logo-upload">Logo Upload</label>
+                    <input type="file" id="logo-upload" name="logo" accept="image/*">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="font-style">Font Style</label>
+                        <select id="font-style" name="fontStyle">
+                            <option value="modern">Modern</option>
+                            <option value="classic">Classic</option>
+                            <option value="elegant">Elegant</option>
+                            <option value="bold">Bold</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="overall-style">Overall Style</label>
+                        <select id="overall-style" name="overallStyle">
+                            <option value="professional">Professional</option>
+                            <option value="creative">Creative</option>
+                            <option value="minimalist">Minimalist</option>
+                            <option value="vibrant">Vibrant</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="content-text">Content Text</label>
+                    <textarea id="content-text" name="contentText" rows="4" placeholder="Provide any specific text content you want included on your website"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Premium Order - $99.99</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

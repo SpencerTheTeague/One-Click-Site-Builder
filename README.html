@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Site Builder - Deployment Instructions</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #003366;
+            border-bottom: 3px solid #00BCD4;
+            padding-bottom: 1rem;
+        }
+        h2 {
+            color: #003366;
+            margin-top: 2rem;
+        }
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 1rem;
+            border-left: 4px solid #00BCD4;
+            margin: 1rem 0;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+        }
+        code {
+            background-color: #f1f3f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .step {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border-left: 4px solid #003366;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 One Click Site Builder - Deployment Instructions</h1>
+        
+        <div class="highlight">
+            <strong>Congratulations!</strong> Your professional One Click Site Builder website is ready to go live. This package contains everything you need to launch your business website.
+        </div>
+
+        <h2>📦 What's Included</h2>
+        <ul>
+            <li><code>index.html</code> - Main website file</li>
+            <li><code>css/styles.css</code> - Professional styling and responsive design</li>
+            <li><code>js/script.js</code> - Interactive functionality and form validation</li>
+            <li><code>images/</code> - All website images and assets</li>
+            <li><code>README.html</code> - This instruction file</li>
+        </ul>
+
+        <h2>🌐 Quick Deployment Options</h2>
+
+        <div class="step">
+            <h3>Option 1: Netlify (Recommended - Free)</h3>
+            <ol>
+                <li>Go to <a href="https://netlify.com" target="_blank">netlify.com</a> and create a free account</li>
+                <li>Drag and drop this entire ZIP file onto the Netlify dashboard</li>
+                <li>Your site will be live in seconds with a free subdomain</li>
+                <li>Connect your custom domain in the Netlify settings</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 2: Traditional Web Hosting</h3>
+            <ol>
+                <li>Extract all files from this ZIP package</li>
+                <li>Upload all files to your web hosting provider's public folder (usually <code>public_html</code> or <code>www</code>)</li>
+                <li>Ensure <code>index.html</code> is in the root directory</li>
+                <li>Your site will be accessible at your domain</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <h3>Option 3: GitHub Pages (Free)</h3>
+            <ol>
+                <li>Create a new repository on GitHub</li>
+                <li>Upload all files to the repository</li>
+                <li>Enable GitHub Pages in repository settings</li>
+                <li>Your site will be live at <code>username.github.io/repository-name</code></li>
+            </ol>
+        </div>
+
+        <h2>⚙️ Configuration Required</h2>
+        
+        <div class="warning">
+            <strong>Important:</strong> Before going live, you need to update these placeholder values in your files:
+        </div>
+
+        <div class="step">
+            <h3>1. Gumroad Integration</h3>
+            <p>In <code>index.html</code>, find this line:</p>
+            <code>&lt;a href="https://gum.co/PLACEHOLDER"&gt;</code>
+            <p>Replace <code>PLACEHOLDER</code> with your actual Gumroad product ID.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. Form Submission</h3>
+            <p>In <code>js/script.js</code>, find this line:</p>
+            <code>const response = await fetch('https://formspree.io/f/PLACEHOLDER'</code>
+            <p>Replace <code>PLACEHOLDER</code> with your actual Formspree endpoint ID.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. Example Links (Optional)</h3>
+            <p>Update the example preview links in <code>index.html</code> to point to your actual example sites:</p>
+            <ul>
+                <li><code>https://yourname.manus.space/coffee-shop-example</code></li>
+                <li><code>https://yourname.manus.space/portfolio-example</code></li>
+                <li><code>https://yourname.manus.space/startup-landing-example</code></li>
+            </ul>
+        </div>
+
+        <h2>📱 Features Included</h2>
+        <ul>
+            <li>✅ Fully responsive design (mobile, tablet, desktop)</li>
+            <li>✅ Professional color scheme and typography</li>
+            <li>✅ Smooth scrolling navigation</li>
+            <li>✅ Form validation and error handling</li>
+            <li>✅ Payment integration ready (Gumroad)</li>
+            <li>✅ Email form submission (Formspree)</li>
+            <li>✅ SEO-optimized HTML structure</li>
+            <li>✅ Fast loading and optimized images</li>
+        </ul>
+
+        <h2>🔧 Customization Tips</h2>
+        <ul>
+            <li><strong>Colors:</strong> Search for <code>#003366</code> and <code>#00BCD4</code> in <code>styles.css</code> to change the color scheme</li>
+            <li><strong>Content:</strong> Edit text directly in <code>index.html</code></li>
+            <li><strong>Images:</strong> Replace files in the <code>images/</code> folder with your own (keep the same filenames)</li>
+            <li><strong>Logo:</strong> Update the "One Click Site Builder" text in the header with your business name</li>
+        </ul>
+
+        <h2>📞 Support</h2>
+        <p>If you need help with deployment or customization:</p>
+        <ul>
+            <li>Email: <a href="mailto:support@oneclicksitebuilder.com">support@oneclicksitebuilder.com</a></li>
+            <li>All files are standard HTML/CSS/JavaScript - any web developer can help</li>
+            <li>Documentation for Netlify, Formspree, and Gumroad is available on their websites</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Pro Tip:</strong> Test your website locally by opening <code>index.html</code> in your browser before deploying. Make sure all links work and the design looks good on different screen sizes.
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ by One Click Site Builder<br>
+            Professional websites in 24 hours - Only $29.99</p>
+        </div>
+    </div>
+</body>
+</html>
+
